@@ -1,0 +1,156 @@
+@charset "utf-8";
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Gayathri", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.topstrip {
+  background-color: #747c7b;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+
+.topstrip .contact-info i {
+  font-style: normal;
+  color: #fff;
+  line-height: 0;
+}
+
+.topstrip .contact-info i a,
+.topstrip .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .topstrip .contact-info i a,
+  .topstrip .contact-info i span {
+      font-size: 13px;
+  }
+}
+
+.topstrip .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.topstrip .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.topstrip .social-icon a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.topstrip .social-icon a:hover {
+  color: #fff;
+}
+.topbar {
+  /* display: block; */
+  background: #411c1c;
+  height: 100px;
+  width: auto;
+  /* color: rgb(236, 77, 77); */
+  text-align: center;
+  /* justify-content: center; */
+}
+  
+ 
+  
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #df6969;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+        margin-left: 10px;
+    }
+    span {
+        display: none;
+    }
+    .topbar img {
+        /* padding-right: 19%; */
+        width: 70%;
+        font-size: 21px;
+        padding: auto;
+        margin: auto;
+    }
+    .topbar {
+        height: 100%;
+    }
+}
+@media (max-width: 769px) {
+    span {
+        display: none;
+    }
+    .topbar .container .name img {
+        /* padding-right: 19%; */
+        width: 98%;
+        font-size: 21px;
+        text-align: center;
+    }
+    .topbar .container .name {
+        /* padding-right:25%; */
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        /* word-break: break-all; */
+    }
+    .gallery .container a {
+        margin-left: 70%;
+    }
+
+    /* .social-links a {
+      
+      margin-left:25px;
+  } */
+}
